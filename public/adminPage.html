@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="font/flaticon.css">
+
+    <link rel="stylesheet" type="text/css" href="admin.css">
+    <title>marketIL</title>
+    <script type="text/javascript" src="http://www.carqueryapi.com/js/carquery.0.3.4.js"></script>
+    <script src="Jscripts.js"></script>
+</head>
+<body >
+
+
+    <div class="content">
+        <br><br><br>
+        <h2>Add Device</h2>
+        <input type="text" class="form-control parts_inputs" id="partname" placeholder="Device Name"><br>
+        <select class="form-control parts_inputs" id="brand">
+			<option>Check in Device brand</option>
+            <option>Samsung</option>
+            <option>Iphone</option>
+            <option>Huawie</option>
+            <option>Pixel</option>
+        </select><br>
+		<select class="form-control parts_inputs" id="OS">
+			<option>Form of OS</option>
+            <option>Android</option>
+            <option>IOS</option>
+        </select><br>
+		<input type="text" class="form-control parts_inputs" placeholder="Model" id="model"><br>
+		<input type="text" class="form-control parts_inputs" placeholder="Price" id="price"><br>
+        <input type="text" class="form-control parts_inputs" placeholder="pic url" id="picurl"><br>
+        <button type="button" class="btn btn-primary selector " style="width: 100px" onclick="addDevice()">Add Device</button>
+        <br><br>
+        
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyC88r03oLhZ-VwrW-AlHR97Z1RuYc8vKnc",
+            authDomain: "marketil.firebaseapp.com",
+            databaseURL: "https://marketil.firebaseio.com",
+            projectId: "marketil",
+            storageBucket: "marketil.appspot.com",
+            messagingSenderId: "101178652945",
+            appId: "1:101178652945:web:2e76edb02e118d8c59f4b0",
+            measurementId: "G-TVHRDQN7PT"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+<script src="Jscripts.js"></script>s
+</body>
+</html>
