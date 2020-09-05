@@ -1,4 +1,5 @@
-    //////////////////////replace task with the relevant name of input
+function addDevice(){   
+   //////////////////////replace task with the relevant name of input
     let name = $("input#partname").val();
     //////////////////////replace Priorty-options selector name
     let brand = $("#brand").val();
@@ -23,3 +24,4 @@
         .catch(function(error) {
             console.error("Error adding document: ", error);
         });
+}
